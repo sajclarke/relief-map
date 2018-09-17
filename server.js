@@ -1,7 +1,11 @@
 // our dependencies
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors')
 const app = express();
+
+app.use(cors());
+// app.options('*', cors()) // TODO: Add whitelisting
 
 //Config bodyparser to parse JSON
 app.use(bodyParser.json());
