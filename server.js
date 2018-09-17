@@ -20,7 +20,7 @@ app.get("/hello", function(req, res) {
   if(!req.query.name) {
       return res.send({"status": "error", "message": "missing a parameter"});
   } else {
-      return res.send("Welcome back, "+req.query.name);
+      return res.send({'message':"Welcome back, "+req.query.name});
   }
 });
 
@@ -29,7 +29,7 @@ app.post("/hello", function(req, res) {
   if(!req.body.name) {
       return res.send({"status": "error", "message": "missing a parameter"});
   } else {
-      return res.send("Welcome back, "+req.body.name);
+      return res.send({'message':"Welcome back, "+req.body.name});
   }
 });
 
