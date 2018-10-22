@@ -6,7 +6,7 @@ Accepts [name] as GET or POST parameters and provides a JSON response of "Welcom
 
 ## Todo
 - [x] Deploy to heroku
-- [ ] Fix Get request params
+- [x] Fix Get request params
 - [ ] Use Boom Error responses
 - [ ] Use Joi Data validation
 - [ ] Use Helmet to secure HTTP headers
