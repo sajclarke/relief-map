@@ -4,7 +4,7 @@
   "description": "Simple setup for a local Node Express API for GET/POST requests. Also includes Procfile for Heroku deployment",
   "main": "index.js",
   "engines": {
-    "node": "8.9.2"
+    "node": "11.4.0"
   },
   "dependencies": {
     "concurrently": "^3.1.0",
