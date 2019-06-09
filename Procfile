@@ -1,5 +1,5 @@
 # create '/Procfile'
-web: node server.js
+web: node server/server.js
 
 # test start
 $ foreman start
