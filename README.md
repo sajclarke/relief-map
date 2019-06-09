@@ -1,13 +1,16 @@
-# express-api-simple
-Simple setup for a local Node Express API for GET/POST requests. Also includes Procfile for Heroku deployment
+# Relief Map Example
+
+Simple setup for a client/server for displaying relief points stored on a public Google spreadsheet. Also includes Procfile for Heroku deployment
 
 ## Features
-Accepts [name] as GET or POST parameters and provides a JSON response of "Welcome back [name]"
+
+- Server to read from public Google spreadsheet of relief points
+- Client app (made with `create-react-app`) that displays the relief points on a map (using `mapbox-gl.js`)
 
 ## Todo
-- [x] Deploy to heroku
-- [x] Fix Get request params
-- [ ] Use Boom Error responses
-- [ ] Use Joi Data validation
-- [ ] Use Helmet to secure HTTP headers
-- [ ] Add CORS whitelisting
+
+- [x] Pull data from spreadsheet using Google Spreadsheet API
+- [x] Setup REST API
+- [x] Display relief points using Mapbox in React app
+- [ ] Extend REST API to CRUD (create, update, delete) relief points
+- [ ] Submit new relief points via client app
