@@ -1,2 +1,2 @@
 # create '/Procfile'
-web: yarn start:prod
+web: yarn start
