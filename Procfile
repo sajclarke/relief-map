@@ -1,2 +1,2 @@
 # create '/Procfile'
-web: yarn start
+web: npm run start
