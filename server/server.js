@@ -15,12 +15,10 @@ let ver = process.env.NODE_ENV;
 let credentials;
 
 if (ver === 'production') {
-  credentials = process.env.CREDS;
+  credentials = JSON.parse(process.env.CREDS); //You'll need to set this in your own production environment
 } else {
   credentials = require('./service-account.json');
 }
-
-// const credentials = require('./service-account.json');
 
 const SPREADSHEET_ID = '1mI_GQ83sNUDHUPPeNNxmLfjJzf0LMlS1T2ySgNsWSjc';
 
