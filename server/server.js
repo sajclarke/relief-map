@@ -7,7 +7,20 @@ const cors = require('cors');
 const GoogleSpreadsheet = require('google-spreadsheet');
 const { promisify } = require('util');
 
-const credentials = require('./service-account.json');
+require('dotenv').config();
+
+// process.env.NODE_ENV allows you to get the environment the node process is in
+let ver = process.env.NODE_ENV;
+
+let credentials;
+
+if (ver === 'production') {
+  credentials = ENV['CREDS'];
+} else {
+  credentials = require('./service-account.json');
+}
+
+// const credentials = require('./service-account.json');
 
 const SPREADSHEET_ID = '1mI_GQ83sNUDHUPPeNNxmLfjJzf0LMlS1T2ySgNsWSjc';
 
