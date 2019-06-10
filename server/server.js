@@ -63,7 +63,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve the static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
+// app.use(express.static(path.join(__dirname, 'client/build')));
+console.log(__dirname);
+const staticFiles = express.static(path.join(__dirname, '../client/build'));
+app.use(staticFiles);
 
 // from top level path e.g. localhost:3000, this response will be sent
 // app.get('/', (request, response) => response.send('Hello World'));
