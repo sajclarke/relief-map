@@ -15,7 +15,7 @@ let ver = process.env.NODE_ENV;
 let credentials;
 
 if (ver === 'production') {
-  credentials = ENV['CREDS'];
+  credentials = process.env.CREDS;
 } else {
   credentials = require('./service-account.json');
 }
