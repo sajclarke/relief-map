@@ -1,6 +1,6 @@
 # Relief Map Example
 
-Simple setup for a client/server for displaying relief points stored on a public Google spreadsheet. Also includes Procfile for Heroku deployment
+This project was inspired by [relieftt.org](www.relieftt.org). This repo is a simple setup for a client/server for displaying relief points stored on a public Google spreadsheet. Also includes Procfile for Heroku deployment
 
 ## Features
 
